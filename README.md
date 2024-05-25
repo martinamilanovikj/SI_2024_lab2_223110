@@ -16,15 +16,15 @@
 
 AllItems {    Name      Barcode    Price    Discount} Payment   
           
-          1.                 {null}                     X
+          1.                  {null}                     X
          
-          2.  {}          0456      302       0.2f      2000
+          2.  {}         0456       302       0.2f     2000
          
           3.  notebook    null       X         X        X
          
           4.  pencil     -1356       X         X        X
          
-          5.  pen         8573      302       0.2f      7000
+          5.  pen         8573      302       0.2f      2
 
           
 Tест 1 е случај кога AllItems е null односно имаме празна листа.
@@ -46,33 +46,18 @@ if(item.getPrice() > 300              if( item.getDiscount() > 0                
          
          T                                   T                                  F
        
-         Т                                   F                                  T
-       
          Т                                   F                                  F
-        
+       
          F                                   T                                  T
         
-         F                                   T                                  F
-        
-         F                                   F                                  T
-       
-         F                                   F                                  F
-
 
          Teст случаи:
-         1.price = 350; discount = 3; barcode = 04628;
+         1.price = 350; discount = 0.3; barcode = 04628;
          
-         2.price = 489; discount = 5; barcode = 74858;
+         2.price = 489; discount = 0.5; barcode = 74858;
          
-         3.price = 500; discount = 0; barcode = 08253;
+         3.price = 350; discount = 0; barcode = 83678;
          
-         4.price = 350; discount = 0; barcode = 83678;
+         4.price = 300; discount = 0.7; barcode = 02535;
          
-         5.price = 300; discount = 7; barcode = 02535;
-         
-         6.price = 260; discount = 10; barcode = 68432;
-         
-         7.price = 100; discount = 0; barcode = 05235;
-         
-         8.price = 168; discount = 0; barcode = 28357;
          
